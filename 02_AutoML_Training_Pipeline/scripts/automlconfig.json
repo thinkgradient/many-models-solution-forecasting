@@ -1,0 +1,24 @@
+{
+    "task": "forecasting",
+    "primary_metric": "normalized_root_mean_squared_error",
+    "iteration_timeout_minutes": 10,
+    "iterations": 15,
+    "experiment_timeout_hours": 1,
+    "label_column_name": "Sales",
+    "n_cross_validations": 3,
+    "verbosity": 20,
+    "debug_log": "automl_oj_sales_debug.txt",
+    "time_column_name": "Week",
+    "max_horizon": 20,
+    "group_column_names": [
+        "Sku"
+    ],
+    "grain_column_names": [
+        "Sku"
+    ],
+    "track_child_runs": false,
+    "pipeline_fetch_max_batch_size": 15,
+    "blocked_models": [
+        ""
+    ]
+}
